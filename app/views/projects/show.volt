@@ -1,4 +1,5 @@
 <h1>{{ project.name }}</h1>
+<p>{{ project.description }}</p>
 
 <!--<table border="1">-->
     <!--{% for project in projects %}-->

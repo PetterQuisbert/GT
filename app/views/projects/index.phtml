@@ -1,14 +1,28 @@
-<div id="page-wrapper">
-  <h1>Proyectos</h1>
-  <ul>
-    <?php foreach ($projects as $project) { ?>
-      <li><a href="show/<?php print $project->id; ?>"><?php print $project->name; ?></a></li>
-    <?php } ?>
-  </ul>
+<div id="page-wrapper" class="navigation">
+  <div class="home"></div>
+  <div class="titleBar">Municipio de La Paz / <span>Proyectos de urbanismo y vivienda</span></div>
 
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="page-header marginTop20"></div>
-    </div>
+</div>
+<h1 class="page-header titlePages">Proyectos</h1>
+<div id="page-wrapper">
+  <table class="listaProyectos">
+
+    <?php foreach ($projects as $project) { ?>
+    <tr>
+      <td>
+        <div class="imageProyecto"></div>
+        <div class="cuerpoProyecto">
+          <a href="show/<?php print $project->id; ?>" class="titleListaProyecto"><?php print $project->name; ?></a>
+          <div class="rankingProyecto"><div class="labelStar">Ranking del Proyecto</div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div></div>
+          <a href="show/<?php print $project->id; ?>" class="descriptionListaProyecto"><?php print $project->description;?></a></td>
+</div>
+</tr>
+<?php } ?>
+</table>
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="page-header marginTop20"></div>
   </div>
+</div>
 </div>
