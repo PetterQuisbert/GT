@@ -10,7 +10,8 @@ class ControllerBase extends Controller
     //Add some local CSS resources
     $this->assets
       ->addCss('css/bootstrap.min.css')
-      ->addCss('css/unetic.css');
+      ->addCss('css/sb-admin.css')
+      ->addCss('css/font-awesome.min.css');
 
     //and some local javascript resources
     $this->assets
