@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/blog">Gestion Transparente</a>
+                <a class="navbar-brand" href="/blog/">Gestion Transparente</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,12 +40,12 @@
                             <?php foreach ($categories as $category) { ?>
                             <?php if ($category->type == 0 && ($category->category_parent_id == 0)) { ?>
                             <li>
-                                <a href="/blog/projects/"><?php print $category->name; ?></a>
+                                <a href="projects/"><?php print $category->name; ?></a>
                                 <ul>
                                     <?php foreach ($subCategories as $subCategory) { ?>
                                     <?php if ($subCategory->type == 0 && ($subCategory->category_parent_id == $category->id)) { ?>
                                     <li>
-                                        <a href="/blog/projects/"><?php print $subCategory->name; ?></a>
+                                        <a href="projects/"><?php print $subCategory->name; ?></a>
                                     </li>
                                     <?php } ?>
                                     <?php } ?>

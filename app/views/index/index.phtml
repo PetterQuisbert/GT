@@ -1,81 +1,54 @@
-<div id="wrapper">
+<div id="page-wrapper">
 
-  <!-- Sidebar -->
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Expandir Navegaci&oacute;</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Gestion Transparente</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav side-nav verticalLeftBar">
-        <li>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Buscar Entidad" id="query" name="query" value="">
-
-            <div class="input-group-btn">
-              <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
-            </div>
-          </div>
-
-          <ul class="SearchList">
-            <?php foreach ($categories as $category) { ?>
-              <?php if ($category->type == 0 && ($category->category_parent_id == 0)) { ?>
-                <li>
-                  <a href="projects/"><?php print $category->name; ?></a>
-                  <ul>
-                    <?php foreach ($subCategories as $subCategory) { ?>
-                      <?php if ($subCategory->type == 0 && ($subCategory->category_parent_id == $category->id)) { ?>
-                        <li>
-                          <a href="projects/"><?php print $subCategory->name; ?></a>
-                        </li>
-                      <?php } ?>
-                    <?php } ?>
-                  </ul>
-                </li>
-              <?php } ?>
-            <?php } ?>
-          </ul>
+  <div class="row">
+    <div class="col-lg-12">
+      <h1>GOBIERNO Y TRANSPARENCIA
+        <small>Haciendo m&aacute;s claro el futuro</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li class="active">
+          <!--<i class="fa fa-dashboard"></i>-->
+          Porque los gobiernos democráticos deben a través de la tecnología, brindar a sus ciudadanos la información
+          necesaria
+          para ser transparentes. Para que el ciudadano común, impulse el esfuerzo de su país adelante.
         </li>
-      </ul>
+      </ol>
+
+      <!--Imagen de gobierno abierto-->
+      <div class="mainImg"></div>
 
     </div>
-    <!-- /.navbar-collapse -->
-  </nav>
-
-
-  <div id="page-wrapper" class="navigation">
-    <!--<div class="home"></div>-->
   </div>
-  <div id="page-wrapper">
+  <!-- /.row -->
 
-    <div class="row">
-      <div class="col-lg-12">
-        <h1>GOBIERNO Y TRANSPARENCIA
-          <small>Haciendo m&aacute;s claro el futuro</small>
-        </h1>
-        <ol class="breadcrumb">
-          <li class="active">
-            <!--<i class="fa fa-dashboard"></i>-->
-            Porque los gobiernos democráticos deben a través de la tecnología, brindar a sus ciudadanos la información
-            necesaria
-            para ser transparentes. Para que el ciudadano común, impulse el esfuerzo de su país adelante.
-          </li>
-        </ol>
-
-        <!--Imagen de gobierno abierto-->
-        <div class="mainImg"></div>
-
-      </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="page-header marginTop20"></div>
     </div>
-    <!-- /.row -->
+  </div>
+
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-4">
+      <p class="pCenter">
+        <!--<i class="fa fa-dashboard"></i>-->
+        Porque los gobiernos democráticos deben a través de la tecnología, brindar a sus ciudadanos la información
+        necesaria
+        para ser transparentes. Para que el ciudadano común, impulse el esfuerzo de su país adelante.
+      </p>
+    </div>
+    <div class="col-lg-2">
+      <div class="bigCircle">20%<span>Transparencia</span></div>
+    </div>
+    <div class="col-lg-4">
+      <p class="pCenter">
+        <!--<i class="fa fa-dashboard"></i>-->
+        Porque los gobiernos democráticos deben a través de la tecnología, brindar a sus ciudadanos la información
+        necesaria
+        para ser transparentes. Para que el ciudadano común, impulse el esfuerzo de su país adelante.
+      </p>
+    </div>
+    <div class="col-lg-1"></div>
 
     <div class="row">
       <div class="col-lg-12">
@@ -83,99 +56,68 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-lg-1"></div>
-      <div class="col-lg-4">
-        <p class="pCenter">
-          <!--<i class="fa fa-dashboard"></i>-->
-          Porque los gobiernos democráticos deben a través de la tecnología, brindar a sus ciudadanos la información
-          necesaria
-          para ser transparentes. Para que el ciudadano común, impulse el esfuerzo de su país adelante.
-        </p>
-      </div>
-      <div class="col-lg-2">
-        <div class="bigCircle">20%<span>Transparencia</span></div>
-      </div>
-      <div class="col-lg-4">
-        <p class="pCenter">
-          <!--<i class="fa fa-dashboard"></i>-->
-          Porque los gobiernos democráticos deben a través de la tecnología, brindar a sus ciudadanos la información
-          necesaria
-          para ser transparentes. Para que el ciudadano común, impulse el esfuerzo de su país adelante.
-        </p>
-      </div>
-      <div class="col-lg-1"></div>
-
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="page-header marginTop20"></div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="panel panel-info">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-4">
-                <i class="fa fa-comments fa-5x"></i>
-              </div>
-              <div class="col-xs-8 text-right">
-                <p class="announcement-heading">+456</p>
-
-                <p class="announcement-text">Visitas Diarias</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="panel panel-info">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-4">
-                <i class="fa fa-check fa-5x"></i>
-              </div>
-              <div class="col-xs-8 text-right">
-                <p class="announcement-heading">125</p>
-
-                <p class="announcement-text">Gobiernos registrados</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="panel panel-info">
-          <div class="panel-heading">
-            <div class="row">
-              <div class="col-xs-4">
-                <i class="fa fa-tasks fa-5x"></i>
-              </div>
-              <div class="col-xs-8 text-right">
-                <p class="announcement-heading">18</p>
-
-                <p class="announcement-text">Numero de Proyectos</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row -->
-
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-header marginTop20"></div>
-      </div>
-    </div>
-
-
   </div>
-  <!-- /#page-wrapper -->
 
-</div><!-- /#wrapper -->
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-4">
+              <i class="fa fa-comments fa-5x"></i>
+            </div>
+            <div class="col-xs-8 text-right">
+              <p class="announcement-heading">+456</p>
+
+              <p class="announcement-text">Visitas Diarias</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-4">
+              <i class="fa fa-check fa-5x"></i>
+            </div>
+            <div class="col-xs-8 text-right">
+              <p class="announcement-heading">125</p>
+
+              <p class="announcement-text">Gobiernos registrados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <div class="row">
+            <div class="col-xs-4">
+              <i class="fa fa-tasks fa-5x"></i>
+            </div>
+            <div class="col-xs-8 text-right">
+              <p class="announcement-heading">18</p>
+
+              <p class="announcement-text">Numero de Proyectos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row -->
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="page-header marginTop20"></div>
+    </div>
+  </div>
+
+
+</div>
+<!-- /#page-wrapper -->
