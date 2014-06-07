@@ -1,0 +1,6 @@
+<h1>Projects</h1>
+<ul>
+  <?php foreach ($projects as $project) { ?>
+    <li><a href="show/<?php print $project->id; ?>"><?php print $project->name; ?></a></li>
+  <?php } ?>
+</ul>

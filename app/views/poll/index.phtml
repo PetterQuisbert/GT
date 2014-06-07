@@ -1,7 +1,7 @@
 <h1>Polls</h1>
 <ul>
   <?php foreach ($polls as $poll) { ?>
-    <li><a href="show/<?php print $poll->id; ?>"><?php print $poll->question; ?></a></li>
+    <li><a href="poll/show/<?php print $poll->id; ?>"><?php print $poll->question; ?></a></li>
   <?php } ?>
 <!--    {% for poll in polls %}-->
 <!--    <li>{{ link_to('poll/show/' ~ poll.id, poll.question)}}</li>-->

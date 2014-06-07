@@ -1,0 +1,6 @@
+<h1>Users</h1>
+<ul>
+  <?php foreach ($users as $user) { ?>
+    <li><a href="show/<?php print $user->id; ?>"><?php print $user->name; ?></a></li>
+  <?php } ?>
+</ul>
