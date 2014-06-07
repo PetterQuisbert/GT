@@ -3,7 +3,8 @@
 class IndexController extends ControllerBase {
 
   public function indexAction() {
-    $this->view->projects = Projects::find();
+    $this->view->categories = Categories::find();
+    $this->view->subCategories = Categories::find();
   }
 
 }
