@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0bb8a97-d7b7-46e8-992c-e3d59ff3ff88" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/index.phtml" afterPath="$PROJECT_DIR$/app/views/index/index.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/index.phtml" afterPath="$PROJECT_DIR$/app/views/projects/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index.volt" afterPath="$PROJECT_DIR$/app/views/index.volt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="blog.iws" />
@@ -103,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/projects/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="341" selection-end="341" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
+            <state line="14" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.46770602" vertical-offset="0" max-vertical-offset="449">
               <folding />
             </state>
           </provider>
@@ -121,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.volt" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.volt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/index.volt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="18" selection-start="837" selection-end="837" vertical-scroll-proportion="0.5091938" vertical-offset="0" max-vertical-offset="1320">
+            <state line="15" column="39" selection-start="291" selection-end="291" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
@@ -180,10 +177,10 @@
         <option value="$PROJECT_DIR$/public/css/sb-admin.css" />
         <option value="$PROJECT_DIR$/app/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/app/controllers/ControllerBase.php" />
-        <option value="$PROJECT_DIR$/app/views/projects/index.phtml" />
         <option value="$PROJECT_DIR$/app/views/index/index.phtml" />
         <option value="$PROJECT_DIR$/app/views/index.phtml" />
         <option value="$PROJECT_DIR$/app/views/index.volt" />
+        <option value="$PROJECT_DIR$/app/views/projects/index.phtml" />
       </list>
     </option>
   </component>
@@ -530,7 +527,11 @@
       <created>1402168272747</created>
       <updated>1402168272747</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="implementing menu">
+      <created>1402169216729</created>
+      <updated>1402169216729</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -540,7 +541,7 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32908162" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -889,13 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="341" selection-end="341" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="548" selection-end="548" vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="570">
@@ -961,7 +955,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index.volt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="18" selection-start="837" selection-end="837" vertical-scroll-proportion="0.5091938" vertical-offset="0" max-vertical-offset="1320">
+        <state line="15" column="39" selection-start="291" selection-end="291" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/projects/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="342" selection-end="342" vertical-scroll-proportion="0.46770602" vertical-offset="0" max-vertical-offset="449">
           <folding />
         </state>
       </provider>
