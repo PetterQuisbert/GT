@@ -39,7 +39,20 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
 
             <ul class="nav navbar-nav side-nav verticalLeftBar">
+
                 <li>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar Entidad" id="query" name="query" value="">
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </div>
+                    <h1>Bolivia</h1>
+                    <ul>
+                        <?php foreach ($projects as $project) { ?>
+                        <li><a href="show/<?php print $project->id; ?>"><?php print $project->name; ?></a></li>
+                        <?php } ?>
+                    </ul>
                     <!--<span><i class="icon-folder-open"></i> Parent</span> <a href="">Goes somewhere</a>-->
                     <ul>
                         <li>
