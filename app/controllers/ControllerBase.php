@@ -16,7 +16,11 @@ class ControllerBase extends Controller
     //and some local javascript resources
     $this->assets
       ->addJs('js/jquery.js')
-      ->addJs('js/bootstrap.min.js');
+      ->addJs('js/gt.js')
+      ->addJs('js/bootstrap.min.js')
+      ->addJs('js/jquery.tablesorter.js')
+      ->addJs('js/tables.js');
+//      ->addJs('js/chart-data-morris.js');
 
   }
 

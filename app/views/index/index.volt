@@ -37,9 +37,44 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
+
             <ul class="nav navbar-nav side-nav verticalLeftBar">
                 <li>
-                    Aca el search y el tree
+                    <!--<span><i class="icon-folder-open"></i> Parent</span> <a href="">Goes somewhere</a>-->
+                    <ul>
+                        <li>
+                            <span>PRODUCTIVOS</span>
+                            <ul>
+                                <li>
+                                    <span>Agropecuarios</span>
+                                </li>
+                                <li>
+                                    <span>Minero</span>
+                                </li>
+                                <li>
+                                    <span>Industria y Turismo</span>
+                                </li>
+                                <li>
+                                    <span>Hidrocarburos</span>
+                                </li>
+                            </ul>
+                            <span>INFRAESTRUCTURA</span>
+                            <ul>
+                                <li>
+                                    <span>Energia</span>
+                                </li>
+                                <li>
+                                    <span>Transportes</span>
+                                </li>
+                                <li>
+                                    <span>Comunicaciones</span>
+                                </li>
+                                <li>
+                                    <span>Recursos Hidricos</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
             </ul>
 
@@ -194,10 +229,10 @@
 
 <!-- Page Specific Plugins -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
-<script src="js/morris/chart-data-morris.js"></script>
-<script src="js/tablesorter/jquery.tablesorter.js"></script>
-<script src="js/tablesorter/tables.js"></script>
+<!--<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>-->
+<!--<script src="js/morris/chart-data-morris.js"></script>-->
+<!--<script src="js/tablesorter/jquery.tablesorter.js"></script>-->
+<!--<script src="js/tablesorter/tables.js"></script>-->
 
 <!--</body>-->
 <!--</html>-->
