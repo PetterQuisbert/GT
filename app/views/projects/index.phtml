@@ -1,6 +1,76 @@
-<h1>Projects</h1>
-<ul>
-  <?php foreach ($projects as $project) { ?>
-    <li><a href="show/<?php print $project->id; ?>"><?php print $project->name; ?></a></li>
-  <?php } ?>
-</ul>
+<div id="wrapper">
+
+  <!-- Sidebar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Expandir Navegaci&oacute;</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Gestion Transparente</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav side-nav verticalLeftBar">
+        <li>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Buscar Entidad" id="query" name="query" value="">
+
+            <div class="input-group-btn">
+              <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+          </div>
+
+          <ul class="SearchList">
+            <?php foreach ($categories as $category) { ?>
+              <?php if ($category->type == 0 && ($category->category_parent_id == 0)) { ?>
+                <li>
+                  <a href="poll/show/<?php print $category->id; ?>"><?php print $category->name; ?></a>
+                  <ul>
+                    <?php foreach ($subCategories as $subCategory) { ?>
+                      <?php if ($subCategory->type == 0 && ($subCategory->category_parent_id == $category->id)) { ?>
+                        <li>
+                          <a href="design/show/<?php print $subCategory->id; ?>"><?php print $subCategory->name; ?></a>
+                        </li>
+                      <?php } ?>
+                    <?php } ?>
+                  </ul>
+                </li>
+              <?php } ?>
+            <?php } ?>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+
+
+  <div id="page-wrapper" class="navigation">
+    <!--<div class="home"></div>-->
+  </div>
+  <div id="page-wrapper">
+    <h1>Projects</h1>
+    <ul>
+      <?php foreach ($projects as $project) { ?>
+        <li><a href="show/<?php print $project->id; ?>"><?php print $project->name; ?></a></li>
+      <?php } ?>
+    </ul>
+
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-header marginTop20"></div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- /#page-wrapper -->
+
+</div><!-- /#wrapper -->

@@ -29,12 +29,12 @@
             <?php foreach ($categories as $category) { ?>
               <?php if ($category->type == 0 && ($category->category_parent_id == 0)) { ?>
                 <li>
-                  <a href="poll/show/<?php print $category->id; ?>"><?php print $category->name; ?></a>
+                  <a href="projects/"><?php print $category->name; ?></a>
                   <ul>
                     <?php foreach ($subCategories as $subCategory) { ?>
                       <?php if ($subCategory->type == 0 && ($subCategory->category_parent_id == $category->id)) { ?>
                         <li>
-                          <a href="poll/show/<?php print $category->id; ?>"><?php print $category->name; ?></a>
+                          <a href="projects/"><?php print $subCategory->name; ?></a>
                         </li>
                       <?php } ?>
                     <?php } ?>

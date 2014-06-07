@@ -1,6 +1,6 @@
 <?php
 
-class ProjectsController extends \Phalcon\Mvc\Controller {
+class ProjectsController extends ControllerBase {
 
   public function indexAction() {
     $this->view->projects = Projects::find();

@@ -198,6 +198,7 @@ table.tablesorter thead tr th:hover {
 /*Pagina Principal*/
 .mainImg{
     background: url("../img/mainImg.jpg") no-repeat center;
+    background-size: 100%;
     width: 100%;
     height: 290px;
 }
@@ -230,8 +231,16 @@ table.tablesorter thead tr th:hover {
 .verticalLeftBar{
     background-color: #334563 !important;
 }
-
+.SearchList, .SearchList ul {
+    list-style: none;
+    padding: 2px 2px 2px 5px;
+}
+.SearchList li{
+    padding-left: 20px;
+    background: url("../img/listArrowRight.png") no-repeat left top;
+}
 
 
 /*Estilos genericos*/
 .marginTop20{margin-top: 20px !important;}
+.btn-success{background-color: #334563}

@@ -22,6 +22,10 @@ class ControllerBase extends Controller
       ->addJs('js/tables.js');
 //      ->addJs('js/chart-data-morris.js');
 
+
+    $this->view->categories = Categories::find();
+    $this->view->subCategories = Categories::find();
+
   }
 
 }
